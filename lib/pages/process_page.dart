@@ -48,9 +48,9 @@ class _ProcessPageState extends State<ProcessPage> {
               title: '加工EFI',
               content: _buildImportHeader(),
               expander: const Text(
-                'RapidEFI工具配置的EFI,会在EFI输出文件夹生成一个名为configModel的文件,'
+                'LYEFI工具配置的EFI,会在EFI输出文件夹生成一个名为configModel的文件,'
                 '请将此文件导入工具如下指定区域,即可再次编辑当前EFI\n\n'
-                '此功能仅支持RapidEFI V3.0.0以上版本,不支持以前旧版本',
+                '此功能仅支持LYEFI V3.0.0以上版本,不支持以前旧版本',
               ),
             ),
           ),
@@ -71,7 +71,7 @@ class _ProcessPageState extends State<ProcessPage> {
       children: [
         const Flexible(
           child: Text(
-            '(对RapidEFI配置的EFI再次加工)',
+            '(对LYEFI配置的EFI再次加工)',
             overflow: TextOverflow.ellipsis,
           ),
         ),

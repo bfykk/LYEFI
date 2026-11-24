@@ -281,9 +281,9 @@ class HistoryPageState extends State<HistoryPage> {
               title: '历史记录',
               content: _buildClearAllAction(),
               expander: const Text(
-                'RapidEFI工具配置的EFI,每次成功生成后,会进行自动备份,产生一个历史记录。'
+                'LYEFI工具配置的EFI,每次成功生成后,会进行自动备份,产生一个历史记录。'
                 '如有需要，可以根据这个EFI记录再次编辑调整输出\n\n'
-                '此功能仅支持RapidEFI V3.0.0以上版本,不支持以前旧版本',
+                '此功能仅支持LYEFI V3.0.0以上版本,不支持以前旧版本',
               ),
             ),
           ),

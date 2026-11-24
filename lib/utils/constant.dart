@@ -5,7 +5,7 @@ class Constant {
   static const String openCoreVersionKey = 'openCoreVersionKey';
 
   ///应用程序名称
-  static const String appName = 'RapidEFI-Pro';
+  static const String appName = 'LYEFI';
 
   ///主题相关
 

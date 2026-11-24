@@ -35,7 +35,7 @@ class _AboutPageState extends State<AboutPage> {
         ),
         children: const [
           TitleCard(
-            title: '请开发者喝杯奶茶',
+            title: '支持原作者 JeoJay127',
             initiallyExpanded: true,
             expander: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,14 +44,14 @@ class _AboutPageState extends State<AboutPage> {
                   height: 15,
                 ),
                 Text(
-                  'RapidEFI 是一个完全免费、离线、无广告的个人项目。为了让它跟上 OpenCore、Kext、macOS 版本和真实硬件环境的变化，'
+                  'LYEFI 基于 JeoJay127 的 RapidEFI 开源项目（AGPL-3.0）二次开发。原项目完全免费、离线、无广告。为了让它跟上 OpenCore、Kext、macOS 版本和真实硬件环境的变化，'
                   '背后需要持续投入很多业余时间：整理官方文档、适配规则、测试功能、修复问题，也要不断消化用户反馈中的各种特殊机器案例。',
                 ),
                 SizedBox(
                   height: 15,
                 ),
                 Text(
-                  '如果 RapidEFI 曾经帮你节省时间、少走弯路，或者让配置 EFI 这件事变得没那么令人头疼，欢迎用打赏的方式支持项目继续维护。'
+                  '如果 RapidEFI 曾经帮你节省时间、少走弯路，或者让配置 EFI 这件事变得没那么令人头疼，欢迎用打赏的方式支持原作者继续维护这个开源项目。'
                   '金额多少都不重要，你的认可本身就是继续做下去的动力。',
                 ),
                 SizedBox(
@@ -98,14 +98,14 @@ class _AboutPageState extends State<AboutPage> {
             height: 10,
           ),
           TitleCard(
-            title: 'RapidEFI成功案例',
+            title: 'RapidEFI 成功案例（上游）',
             content: LinkButtonRow(
               mainAxisAlignment: MainAxisAlignment.end,
               items: [
                 LinkButtonItem(
                   url:
                       'https://github.com/JeoJay127/RapidEFI-Tool/blob/main/docs/成功案例.md',
-                  buttonText: 'RapidEFI成功案例',
+                  buttonText: '查看上游案例',
                   icon: FluentIcons.open_source,
                 )
               ],

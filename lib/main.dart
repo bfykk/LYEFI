@@ -12,7 +12,7 @@ import 'utils/file_util.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await _bootstrap();
-  runApp(const RapidEFIApp());
+  runApp(const LyefiApp());
 }
 
 Future<void> _bootstrap() async {

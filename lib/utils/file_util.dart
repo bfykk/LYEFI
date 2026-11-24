@@ -19,7 +19,7 @@ class FileUtils {
   const FileUtils._();
 
   static const String androidOutPutPath = '/storage/emulated/0';
-  static const String androidOutPutFolderName = 'RapidEFI';
+  static const String androidOutPutFolderName = 'LYEFI';
   static const String historyConfig = 'history_config';
   static Future<String>? _ocVersionTask;
 
@@ -663,7 +663,7 @@ class _ConfigFileOps {
     final missingKeys = requiredKeys.where((key) => !jsonMap.containsKey(key));
     if (missingKeys.isNotEmpty) {
       throw FormatException(
-        '不是 RapidEFI configModel 文件，缺少字段: ${missingKeys.join(', ')}',
+        '不是 LYEFI configModel 文件，缺少字段: ${missingKeys.join(', ')}',
       );
     }
   }

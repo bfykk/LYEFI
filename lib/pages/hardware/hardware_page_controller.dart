@@ -244,7 +244,7 @@ class HardwarePageController extends ChangeNotifier {
         : outputDirectory;
     final reportDirectoryPath = path.join(
       baseDirectory,
-      'RapidEFI-HardwareReport',
+      'LYEFI-HardwareReport',
     );
     final reportRoot = Directory(reportDirectoryPath);
     if (await reportRoot.exists()) {
@@ -258,7 +258,7 @@ class HardwarePageController extends ChangeNotifier {
     }
     final reportDirectory = await FileUtils.createDirectory(
       baseDirectory,
-      'RapidEFI-HardwareReport',
+      'LYEFI-HardwareReport',
     );
     if (reportDirectory.isEmpty) {
       showToast('硬件报告文件夹创建失败');
@@ -291,7 +291,7 @@ class HardwarePageController extends ChangeNotifier {
         : outputDirectory;
     final result = await _exportLocalAcpiTables(
       baseDirectory,
-      folderName: 'RapidEFI-ACPI',
+      folderName: 'LYEFI-ACPI',
       onRequestSudoPassword: onRequestSudoPassword,
     );
     showToast(

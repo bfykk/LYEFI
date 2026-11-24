@@ -26,8 +26,8 @@ import '../utils/theme.dart';
 
 final _appTheme = AppTheme();
 
-class RapidEFIApp extends StatelessWidget {
-  const RapidEFIApp({super.key});
+class LyefiApp extends StatelessWidget {
+  const LyefiApp({super.key});
 
   @override
   Widget build(BuildContext context) {
