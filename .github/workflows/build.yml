@@ -134,7 +134,7 @@ jobs:
 
           # ── Linux ──────────────────────────────────
           - label:          Linux-x64
-            runner:         ubuntu-latest
+            runner:         ubuntu-24.04
             os:             linux
             arch:           x64
             build_dir:      build/linux/x64/release/bundle
@@ -182,9 +182,9 @@ jobs:
           sudo apt-get update -y
           sudo apt-get install -y -o Acquire::Retries=3 \
             clang cmake ninja-build pkg-config \
-            libgtk-3-dev liblzma-dev libstdc++-12-dev \
+            libgtk-3-dev liblzma-dev build-essential \
             libglib2.0-dev libpango1.0-dev libcairo2-dev \
-            libgdk-pixbuf2.0-dev libatk1.0-dev
+            libgdk-pixbuf-2.0-dev libatk1.0-dev
 
       # ── Flutter：action（除 Linux arm64 外全部使用）────
       - name: Setup Flutter
