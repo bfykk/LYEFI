@@ -540,7 +540,7 @@ const List<_NavDestination> _footerNavDestinations = [
     index: 7,
     path: '/about',
     icon: FluentIcons.coffee_script,
-    title: '赞助开发者',
+    title: '关于 LYEFI',
   ),
 ];
 

@@ -26,7 +26,7 @@ on:
         type: string
 
 env:
-  APP_NAME: RapidEFI
+  APP_NAME: LYEFI
   FLUTTER_VERSION: '3.41.9'
 
 # 同一 ref 的旧构建自动取消（节省 runner 资源）

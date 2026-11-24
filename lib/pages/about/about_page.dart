@@ -1,7 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:rapidefi/pages/shared/widgets/link_button_row.dart';
 import 'package:rapidefi/pages/shared/widgets/title_card.dart';
-import 'package:rapidefi/utils/image_util.dart';
 
 class AboutPage extends StatefulWidget {
   const AboutPage({super.key});
@@ -16,7 +15,7 @@ class _AboutPageState extends State<AboutPage> {
     assert(debugCheckHasFluentTheme(context));
     return ScaffoldPage.scrollable(
         header: const PageHeader(
-          title: Text('赞助开发者'),
+          title: Text('关于 LYEFI'),
           commandBar: LinkButtonRow(
             mainAxisAlignment: MainAxisAlignment.end,
             items: [
@@ -35,7 +34,7 @@ class _AboutPageState extends State<AboutPage> {
         ),
         children: const [
           TitleCard(
-            title: '支持原作者 JeoJay127',
+            title: '来源与致谢',
             initiallyExpanded: true,
             expander: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,38 +43,8 @@ class _AboutPageState extends State<AboutPage> {
                   height: 15,
                 ),
                 Text(
-                  'LYEFI 基于 JeoJay127 的 RapidEFI 开源项目（AGPL-3.0）二次开发。原项目完全免费、离线、无广告。为了让它跟上 OpenCore、Kext、macOS 版本和真实硬件环境的变化，'
-                  '背后需要持续投入很多业余时间：整理官方文档、适配规则、测试功能、修复问题，也要不断消化用户反馈中的各种特殊机器案例。',
-                ),
-                SizedBox(
-                  height: 15,
-                ),
-                Text(
-                  '如果 RapidEFI 曾经帮你节省时间、少走弯路，或者让配置 EFI 这件事变得没那么令人头疼，欢迎用打赏的方式支持原作者继续维护这个开源项目。'
-                  '金额多少都不重要，你的认可本身就是继续做下去的动力。',
-                ),
-                SizedBox(
-                  height: 15,
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      LoadAssetsImage(
-                        'donate_alipay',
-                        format: ImageFormat.png,
-                        width: 213 * 0.8,
-                        height: 284 * 0.8,
-                      ),
-                      LoadAssetsImage(
-                        'donate_wechat',
-                        format: ImageFormat.png,
-                        width: 213 * 0.8,
-                        height: 284 * 0.8,
-                      )
-                    ],
-                  ),
+                  'LYEFI 基于 JeoJay127 的 RapidEFI 开源项目（AGPL-3.0）二次开发。原项目完全免费、离线、无广告，'
+                  '由作者长期利用业余时间维护：整理官方文档、适配规则、测试功能、修复问题，并不断消化用户反馈中的特殊机器案例。',
                 ),
                 SizedBox(
                   height: 15,
@@ -87,9 +56,6 @@ class _AboutPageState extends State<AboutPage> {
                 ),
                 SizedBox(
                   height: 15,
-                ),
-                Text(
-                  '捐赠作者：QQ 766264141 / 微信 JeoJay127。除此之外没有其他私人联系方式，请谨防受骗。',
                 ),
               ],
             ),
