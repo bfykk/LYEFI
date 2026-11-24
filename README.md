@@ -1,3 +1,5 @@
+> **LYEFI 说明**：本项目基于 [JeoJay127/RapidEFI-Tool](https://github.com/JeoJay127/RapidEFI-Tool) 的源代码修改而来（导入日期 2026-11-25），遵循 GNU AGPL-3.0 许可证，原作者版权归 JeoJay127 所有。修改后的完整源码同样以 AGPL-3.0 公开于本仓库。
+
 # RapidEFI
 
 **一个面向普通用户的 OpenCore EFI 配置、自动生成与后期维护工具**
