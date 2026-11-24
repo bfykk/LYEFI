@@ -32,7 +32,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   int workHeight = workArea.bottom - workArea.top;
   Win32Window::Point origin(workArea.left + (workWidth - size.width) / 2,
                             workArea.top + (workHeight - size.height) / 2);
-  if (!window.Create(L"rapidefi", origin, size)) {
+  if (!window.Create(L"LYEFI", origin, size)) {
     return EXIT_FAILURE;
   }
   window.SetQuitOnClose(true);
