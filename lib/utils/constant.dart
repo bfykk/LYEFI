@@ -5,7 +5,7 @@ class Constant {
   static const String openCoreVersionKey = 'openCoreVersionKey';
 
   ///应用程序名称
-  static const String appName = 'LYEFI';
+  static const String appName = '冷月定制';
 
   ///主题相关
 

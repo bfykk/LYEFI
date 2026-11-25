@@ -15,9 +15,9 @@ import 'package:rapidefi/widgets/inkwell_widget.dart';
 import 'package:sp_util/sp_util.dart';
 
 const String snippet = '''
-1.工具默认勾选【配置EFI时添加OpenCore引导主题】.LYEFI工具配置输出EFI的时候,会添加一个OpenCore的引导主题.如果不需要主题,可以去掉勾选.
+1.工具默认勾选【配置EFI时添加OpenCore引导主题】.冷月定制工具配置输出EFI的时候,会添加一个OpenCore的引导主题.如果不需要主题,可以去掉勾选.
 
-2.工具默认勾选【生成configModel文件到EFI文件夹】.LYEFI工具配置输出EFI的时候,会在EFI输出文件夹生成一个名为configModel的文件.该文件可用于再次编辑调整当前EFI.具体可参考工具【加工EFI】部分.
+2.工具默认勾选【生成configModel文件到EFI文件夹】.冷月定制工具配置输出EFI的时候,会在EFI输出文件夹生成一个名为configModel的文件.该文件可用于再次编辑调整当前EFI.具体可参考工具【加工EFI】部分.
 
 3.如果勾选【EFI压缩成Zip文件】,工具输出EFI的同时会将当前EFI压缩成一个Zip文件。注意压缩Zip文件,会影响输出EFI整体进度。尤其性能比较差的硬件,影响更为明显.谨慎勾选此项.
 ''';

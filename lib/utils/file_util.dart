@@ -663,7 +663,7 @@ class _ConfigFileOps {
     final missingKeys = requiredKeys.where((key) => !jsonMap.containsKey(key));
     if (missingKeys.isNotEmpty) {
       throw FormatException(
-        '不是 LYEFI configModel 文件，缺少字段: ${missingKeys.join(', ')}',
+        '不是 冷月定制 configModel 文件，缺少字段: ${missingKeys.join(', ')}',
       );
     }
   }

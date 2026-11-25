@@ -18,7 +18,7 @@ class _EDIDPageState extends State<EDIDPage> {
   final String tip = r'''
   1. 通常用于修复 Intel 6～10 代核显黑屏无信号问题（这里只处理核显 EDID）。
   2. 500 系台式机主板（H510/B560/H570/Q570/Z590/W580）使用核显 HDMI 输出时，必须注入真实显示器 EDID。
-  3. 可在 Windows 版 LYEFI 或 hdinfo 的显示器详情中复制 EDID。
+  3. 可在 Windows 版 冷月定制 或 hdinfo 的显示器详情中复制 EDID。
   4. 注入前请先在“高级配置”中勾选需要注入的 AAPL0X 接口。
   5. EDID 通常为 256 位或 512 位十六进制数据。
   ''';
