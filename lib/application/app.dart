@@ -8,6 +8,7 @@ import 'package:oktoast/oktoast.dart';
 import 'package:provider/provider.dart';
 import 'package:rapidefi/pages/about/about_page.dart';
 import 'package:rapidefi/pages/history/history_page.dart';
+import 'package:rapidefi/pages/lock/lock_page.dart';
 import 'package:rapidefi/pages/home_tab_page.dart';
 import 'package:rapidefi/pages/oclp/oclp_tab_page.dart';
 import 'package:rapidefi/pages/process_page.dart';
@@ -18,6 +19,7 @@ import 'package:rapidefi/utils/constant.dart';
 import 'package:rapidefi/utils/device_util.dart';
 import 'package:rapidefi/utils/image_util.dart';
 import 'package:rapidefi/widgets/double_click_exit_app.dart';
+import 'package:rapidefi/widgets/window_buttons.dart';
 import 'package:rapidefi/widgets/flutter_picker/picker_localizations_delegate.dart';
 import 'package:sp_util/sp_util.dart';
 import 'package:window_manager/window_manager.dart';
@@ -85,7 +87,7 @@ class _AppHost extends StatelessWidget {
       locale: appTheme.locale,
       builder: (context, child) => _AppChrome(
         appTheme: appTheme,
-        child: child ?? const SizedBox.shrink(),
+        child: LockGate(child: child ?? const SizedBox.shrink()),
       ),
       routeInformationParser: router.routeInformationParser,
       routerDelegate: router.routerDelegate,
@@ -655,21 +657,3 @@ final GoRouter router = GoRouter(
     ),
   ],
 );
-
-class WindowButtons extends StatelessWidget {
-  const WindowButtons({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final FluentThemeData theme = FluentTheme.of(context);
-
-    return SizedBox(
-      width: 138,
-      height: 50,
-      child: WindowCaption(
-        brightness: theme.brightness,
-        backgroundColor: Colors.transparent,
-      ),
-    );
-  }
-}
